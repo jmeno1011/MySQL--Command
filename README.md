@@ -17,10 +17,14 @@ PRIMARY KEY(칼럼명)
 
 ```SQL
 SELECT * FROM 테이블명;
+
 SELECT * FROM 테이블명 WHERE 칼럼명="검색어";
+
 SELECT * FROM 테이블명 ORDER BY 칼럼명;
+
 -- 오름차순
 SELECT * FROM 테이블명 ORDER BY 칼럼명 ASC;
+
 -- 내림차순
 SELECT * FROM 테이블명 ORDER BY 칼럼명 DESC;
 ```
@@ -30,6 +34,7 @@ SELECT * FROM 테이블명 ORDER BY 칼럼명 DESC;
 ```SQL
 -- 테이블 칼럼 순서대로 값이 들어간다.
 INSERT INTO 테이블명 VALUES(value1, value2, value3, ...);
+
 -- 테이블 칼럼 입력한 순서대로 값이 들어간다.
 INSERT INTO 테이블명(column1, column2, column3, ...)  VALUES(value1, value2, value3, ...);
 ```

@@ -1,8 +1,9 @@
 # MySQL Command
 
-## 테이블 생성
+## 테이블 생성 (create)
 
 ```SQL
+
 CREATE TABLE 테이블명
 (
 칼럼명(ex: \_id) AUTO_INCREMENT,
@@ -11,14 +12,16 @@ CREATE TABLE 테이블명
 칼럼명 DATE,
 PRIMARY KEY(칼럼명)
 );
+
 ```
 
-## 테이블 조회
+## 테이블 조회 (select)
 
 ```SQL
+
 SELECT * FROM 테이블명;
 
-SELECT * FROM 테이블명 WHERE 칼럼명="검색어";
+SELECT * FROM 테이블명 WHERE 칼럼명 = "검색어";
 
 SELECT * FROM 테이블명 ORDER BY 칼럼명;
 
@@ -27,20 +30,33 @@ SELECT * FROM 테이블명 ORDER BY 칼럼명 ASC;
 
 -- 내림차순
 SELECT * FROM 테이블명 ORDER BY 칼럼명 DESC;
+
 ```
 
-## 테이블 데이터 입력
+## 테이블 데이터 입력 (insert)
 
 ```SQL
+
 -- 테이블 칼럼 순서대로 값이 들어간다.
 INSERT INTO 테이블명 VALUES(value1, value2, value3, ...);
 
 -- 테이블 칼럼 입력한 순서대로 값이 들어간다.
 INSERT INTO 테이블명(column1, column2, column3, ...)  VALUES(value1, value2, value3, ...);
+
 ```
 
-## 테이블 데이터 삭제
+## 테이블 데이터 업데이트
 
 ```SQL
+
+UPDATE 테이블 SET column1 = "value1" WHERE 칼럼명 = "검색어";
+
+```
+
+## 테이블 데이터 삭제 (delete)
+
+```SQL
+
 DELETE FROM 테이블명 WHERE column1='value1';
+
 ```

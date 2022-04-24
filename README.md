@@ -60,3 +60,21 @@ UPDATE 테이블 SET column1 = "value1" WHERE 칼럼명 = "검색어";
 DELETE FROM 테이블명 WHERE column1='value1';
 
 ```
+
+## 테이블 컬럼 변경
+
+```SQL
+
+-- 새로운 칼럼 추가
+ALTER TABLE 테이블명 ADD 컬럼명 자료형;
+
+-- 새로운 칼럼 추가 하는데 위치는 지정칼럼명 다음 위치
+ALTER TABLE 테이블명 ADD 컬럼명 자료형 AFTER 지정칼럼;
+
+-- 컬럼명 변경
+ALTER TABLE 테이블명 CHANGE 기존컬럼명 새컬럼명 자료형;
+
+-- 컬럼 자료형 변경
+ALTER TABLE 테이블명 CHANGE 컬럼명 컬럼명 바꿀자료형;
+
+```

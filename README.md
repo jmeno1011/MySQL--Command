@@ -45,7 +45,7 @@ INSERT INTO 테이블명(column1, column2, column3, ...)  VALUES(value1, value2,
 
 ```
 
-## 테이블 데이터 업데이트
+## 테이블 데이터 업데이트 (update)
 
 ```SQL
 

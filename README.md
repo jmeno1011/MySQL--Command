@@ -77,4 +77,7 @@ ALTER TABLE 테이블명 CHANGE 기존컬럼명 새컬럼명 자료형;
 -- 컬럼 자료형 변경
 ALTER TABLE 테이블명 CHANGE 컬럼명 컬럼명 바꿀자료형;
 
+-- 컬럼 삭제
+ALTER TABLE 테이블명 DROP 컬럼명;
+
 ```

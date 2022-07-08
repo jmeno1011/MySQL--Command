@@ -61,7 +61,7 @@ DELETE FROM 테이블명 WHERE column1='value1';
 
 ```
 
-## 테이블 컬럼 변경
+## 테이블 컬럼 변경 (alter)
 
 ```SQL
 
